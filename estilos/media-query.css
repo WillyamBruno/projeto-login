@@ -8,6 +8,7 @@
 
     section#login {
         width: 80vw;
+        height: 50vh;
     }
 
     section#login > div#imagem {
@@ -25,21 +26,22 @@
 @media screen and (min-width: 992px) {
 
     body {
-        background-image: linear-gradient(to top right, #5187DF 5%, #5f2c82 55%);
+        background-image: linear-gradient(to top left, #5187DF 5%, #5f2c82 55%);
     }
     
     section#login {
         width: 990px;
+        height: 60vh;
     }
 
     section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100vh;
     }
 
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
     }
 

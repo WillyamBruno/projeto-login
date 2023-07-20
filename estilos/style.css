@@ -2,7 +2,7 @@
 
 /* 
     Paleta de Cores
-    Verde:  #49a09d
+    Azul:  #5187DF
     Lilas: #5f2c82
 */
 
@@ -29,15 +29,15 @@ section#login {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     width: 250px;
-    height: 500px;
+    height: 515px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, heigh 0.3s;
     transition-timing-function: ease;
 }
@@ -61,4 +61,76 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    border-radius: 8px;
+    border: 2px solid #5f2c82;
+    height: 40px;
+    padding: 1px;
+    margin: 5px 0px;
+}
+
+div.campo > label.fadeitem {
+    display: none;
+}
+
+div.campo > label > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #dfeafd;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4575c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #26416d;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form > a.botao {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-top: 7px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #1a2c48;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+form > a.botao:hover {
+    background-color: #5b9aff;
+    transition: background-color 0.3s ease-in-out;
 }
